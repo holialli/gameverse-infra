@@ -1,6 +1,9 @@
-variable "admin_ip" {
-  description = "Your public IP with /32 (e.g., 39.x.x.x/32) for SSH access"
-  default     = "0.0.0.0/0" # CHANGE THIS to your actual IP for security
+variable "aws_region" {
+  description = "Region for GameVerse deployment"
+  default     = "ap-south-1" 
 }
 
- 
+variable "instance_type" {
+  description = "EC2 instance size"
+  default     = "t3.micro"
+} 
